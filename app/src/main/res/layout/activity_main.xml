@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/notess"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/list_name_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+
+        android:autofillHints="@string/list_name_field"
+        android:backgroundTint="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_alternates_medium"
+        android:gravity="center_vertical"
+        android:hint="@string/list_name_field"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textColorHint="#546E7A"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/info_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_name_field"
+        android:layout_marginHorizontal="50dp"
+        android:fontFamily="@font/montserrat_alternates_medium"
+        android:text="@string/info_app"
+        android:textColor="#303030"
+        android:textSize="15sp" />
+
+    <ListView
+        android:id="@+id/notes_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/info_app"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:divider="@color/purple_200"
+        android:dividerHeight="2dp" />
+</RelativeLayout>

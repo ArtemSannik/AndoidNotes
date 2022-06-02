@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_label_row"
+        android:layout_width="340dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/montserrat_alternates_medium"
+        android:gravity="center_vertical"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/list_delite_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="360dp"
+        android:layout_marginLeft="360dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/delite"
+        android:contentDescription="@string/Delite"
+        android:hapticFeedbackEnabled="false"
+        android:onClick="deliteNotes"
+        android:text="@string/Delite"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+</RelativeLayout>
